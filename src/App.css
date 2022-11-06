@@ -1,0 +1,233 @@
+.App {
+  text-align: center;
+}
+
+.Welcome {
+  height: 300px;
+  background-color: #122a43;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.InnerWelcomeContainer {
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  display: flex;
+}
+
+.ProfilePictureContainer {
+  flex: 1;
+}
+
+.ProfileImage {
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+}
+
+.WelcomeTextContainer {
+  flex: 1;
+  font-size: 80px;
+  color: white;
+  font-weight: 600;
+}
+
+.SidebarContainer {
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  display: flex;
+}
+
+.MenuContainer {
+  display: flex;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  background-color: #2dc093;
+}
+
+.AboutMe {
+  height: 600px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+}
+
+.AboutMeTitle {
+  font-size: 40px;
+  color: #122a43;
+  margin-top: 20px;
+}
+
+.ParagraphContainer {
+  margin-top: 80px;
+  width: 40%;
+  font-size: 20px;
+  color: #122a43;
+  font-weight: 450;
+  height: 100%;
+}
+
+.WorkAndResearch {
+  height: 700px;
+  background-color: #2dc093;
+  border-top-left-radius: 8%;
+  border-top-right-radius: 8%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+.WorkAndResearchTitle {
+  font-size: 40px;
+  color: white;
+  margin-top: 20px;
+  /*border: 2px solid red;*/
+}
+
+.JobsContainer {
+  /*border: 2px solid white; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  margin-top: 80px;
+}
+
+.StanfordLogo {
+  width: 350px;
+}
+
+.SnowflakeLogo {
+  width: 350px;
+}
+
+.Snowflake {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.StanfordMARVL {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.StanfordPositionTitle {
+  color: white;
+  font-size: 22px;
+  font-weight: 400;
+  margin-top: 20px;
+}
+
+.SnowflakePositionTitle {
+  color: white;
+  font-size: 22px;
+  font-weight: 400;
+  margin-top: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #2678b7;
+}
+
+a:visited {
+  color: #2678b7;
+  text-decoration: none;
+}
+
+.PositionDescriptions {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+}
+
+.StanfordPosition {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.SnowflakePosition {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.StanfordTimeline {
+  font-weight: 600;
+}
+
+.SnowflakeTimeline {
+  font-weight: 600;
+  margin-top: 70px;
+}
+
+.Education {
+  height: 700px;
+  border-top-left-radius: 8%;
+  border-top-right-radius: 8%;
+  background-color: #122a43;
+  border: 1px solid #122a43;
+}
+
+.EducationContainer {
+  background-color: #2dc093;
+}
+
+.EducationTitle {
+  font-size: 40px;
+  color: white;
+  margin-top: 20px;
+}
+
+.ProjectsContainer {
+  background-color: #122a43;
+}
+
+.Projects {
+  height: 700px;
+  border-top-left-radius: 8%;
+  border-top-right-radius: 8%;
+  background-color: white;
+}
+
+@media only screen and (max-width: 1100px) {
+  .ParagraphContainer {
+    margin-top: 30px;
+    width: 60%;
+    font-size: 20px;
+    color: #122a43;
+    font-weight: 450;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .ParagraphContainer {
+    margin-top: 30px;
+    width: 90%;
+    font-size: 20px;
+    color: #122a43;
+    font-weight: 450;
+  }
+}
