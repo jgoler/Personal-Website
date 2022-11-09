@@ -196,17 +196,6 @@ a:visited {
   flex-direction: column;
 }
 
-.EducationPositions {
-  margin-top: 120px;
-  align-items: start;
-  justify-content: space-between;
-  color: white;
-  display: flex;
-  flex-direction: row;
-  border: 2px solid red;
-  width: 50%;
-}
-
 .EducationContainer {
   background-color: #2dc093;
 }
@@ -217,66 +206,69 @@ a:visited {
   margin-top: 20px;
 }
 
-.Menlo a {
-  color: white;
-  font-weight: 700;
-}
-
-.Menlo {
+.RowContainer {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  border: 2px solid green;
 }
 
-.EducationalInstituteTitle {
-  margin-top: 20px;
-}
-
-.EducationalInstituteTimeline {
-  margin-top: 5px;
-  font-weight: 500;
-  align-items: center;
-  justify-content: center;
-}
-
-.EducationalInsituteQuickStats {
-  margin-top: 5px;
-  font-weight: 500;
-  align-items: center;
-  justify-content: center;
-}
-
-.MenloCoursework {
-  margin-top: 5px;
-  font-weight: 500;
-  width: 300px;
-  align-items: center;
-  justify-content: center;
-  border: 2px solid red;
-}
-
-.MenloLogo {
-  width: 200px;
-  border: 2px solid yellow;
-}
-
-.CourseraStanford {
+.Row1 {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  align-items: start;
   justify-content: center;
-  border: 2px solid green;
-}
-
-.CourseraStanfordLogo {
-  width: 295px;
-  border: 2px solid yellow;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  width: 90%;
 }
 
 .ProjectsContainer {
   background-color: #122a43;
+}
+
+.Logo {
+  height: 180px;
+}
+
+.LogoContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.InstitutionContainer {
+  width: 33.333333%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.InstitutionTitle {
+  margin-top: 5px;
+  color: white;
+  font-weight: 900;
+}
+
+.InstitutionTimeline {
+  margin-top: 5px;
+  color: white;
+  width: 80%;
+}
+
+.InstitutionQuickStats {
+  margin-top: 5px;
+  color: white;
+  width: 80%;
+}
+
+.EducationDescription {
+  margin-top: 5px;
+  color: white;
+  width: 80%;
 }
 
 .Projects {
@@ -284,6 +276,44 @@ a:visited {
   border-top-left-radius: 8%;
   border-top-right-radius: 8%;
   background-color: white;
+}
+
+@media only screen and (max-width: 1100px) {
+  .Row1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    width: 90%;
+  }
+
+  .Education {
+    border-top-left-radius: 3%;
+    border-top-right-radius: 3%;
+    background-color: #122a43;
+    border: 1px solid #122a43;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .InstitutionContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .EducationDescription {
+    margin-top: 5px;
+    margin-bottom: 50px;
+    color: white;
+    width: 80%;
+  }
 }
 
 @media only screen and (max-width: 1100px) {
