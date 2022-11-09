@@ -16,8 +16,15 @@ function Education() {
             <div className='EducationalInstituteTimeline'>
               August 2019 - June 2023
             </div>
-            <div className='EducationalInsituteQuickStats'>GPA: 4.25</div>
-            <div className='MenloCoursework'>Classes Taken</div>
+            <div className='EducationalInsituteQuickStats'>
+              GPA: 4.25, SAT: 1570 (800 math, 770 EBRW)
+            </div>
+            <div className='MenloCoursework'>
+              12th grade coursework includes Advanced Topics in Math (H): Number
+              Theory, Advanced Topics in Physics (H): Electromagnetism,
+              Relativity, and Quantum Mechanics, AP Calculus BC, and Independent
+              Study in Machine Learning
+            </div>
           </div>
           <div className='CourseraStanford'>
             <img
@@ -38,4 +45,6 @@ function Education() {
   );
 }
 
+/*
+ */
 export default Education;

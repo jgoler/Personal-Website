@@ -198,7 +198,7 @@ a:visited {
 
 .EducationPositions {
   margin-top: 120px;
-  align-items: center;
+  align-items: start;
   justify-content: space-between;
   color: white;
   display: flex;
@@ -219,19 +219,60 @@ a:visited {
 
 .Menlo a {
   color: white;
-  font-weight: 600;
+  font-weight: 700;
+}
+
+.Menlo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid green;
 }
 
 .EducationalInstituteTitle {
   margin-top: 20px;
 }
 
+.EducationalInstituteTimeline {
+  margin-top: 5px;
+  font-weight: 500;
+  align-items: center;
+  justify-content: center;
+}
+
+.EducationalInsituteQuickStats {
+  margin-top: 5px;
+  font-weight: 500;
+  align-items: center;
+  justify-content: center;
+}
+
+.MenloCoursework {
+  margin-top: 5px;
+  font-weight: 500;
+  width: 300px;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid red;
+}
+
 .MenloLogo {
   width: 200px;
+  border: 2px solid yellow;
+}
+
+.CourseraStanford {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid green;
 }
 
 .CourseraStanfordLogo {
-  width: 250px;
+  width: 295px;
+  border: 2px solid yellow;
 }
 
 .ProjectsContainer {
