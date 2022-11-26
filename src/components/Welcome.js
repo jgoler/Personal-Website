@@ -16,11 +16,7 @@ function Welcome() {
         <div className='WelcomeTextContainer'>
           Hi, I'm <span style={{ color: '#2dc093' }}>Jack!</span>
         </div>
-        <div className='SidebarContainer'>
-          <div className='MenuContainer'>
-            <MdMenu color='white' size='45' />
-          </div>
-        </div>
+        <div className='EmptyForSpacing'></div>
       </div>
     </div>
   );
