@@ -1,42 +1,65 @@
 import '../App.css';
-import StanfordLogo from '../assets/Stanford.png';
+import MARVLLogo from '../assets/MARVL_logo.png';
 import SnowflakeLogo from '../assets/Snowflake.png';
 
 function WorkAndResearch() {
   return (
-    <div className='WorkAndResearch'>
-      <div className='WorkAndResearchTitle'>Work and Research Experience</div>
-      <div className='JobsContainer'>
-        <div className='StanfordMARVL'>
-          <img
-            className='StanfordLogo'
-            src={StanfordLogo}
-            alt='Stanford Logo'
-          />
-          <div className='StanfordTimeline'>June 2022 - Present</div>
-          <div className='StanfordPositionTitle'>
-            Research Intern,{' '}
-            <a
-              href='https://marvl.stanford.edu/index.html'
-              target='_blank'
-              color='#122a43'
-            >
-              Stanford University Medical AI and Computer Vision Lab (MARVL)
-            </a>
+    <div className='WorkAndResearchContainer'>
+      <div className='WorkAndResearch'>
+        <div className='WorkAndResearchTitle'>Work and Research</div>
+        <div className='WorkAndResearchExperiences'>
+          <div className='WorkAndResearchLogosContainer'>
+            <div className='WorkAndResearchFirstRowLogo'>
+              <a href='https://marvl.stanford.edu/' target='_blank'>
+                <img
+                  className='WorkAndResearchExperienceLogoStanford'
+                  src={MARVLLogo}
+                  alt='Stanford University MARVL Logo'
+                />
+              </a>
+              <div className='MARVLInformation'>
+                <div className='OrganizationName'>
+                  Stanford University Medical AI and Computer Vision Lab
+                </div>
+                <div className='Timeline'>June 2022 - Present</div>
+                <div className='PositionTitle'>Research Intern</div>
+                <div className='PositionDescription'>
+                  Research medical applications of machine learning. Built a
+                  platform for doctors to use that runs inference and analyzes
+                  open surgery video. Optimized virtual machine usage to save
+                  costs on GPUs. Work with a team of PhD students and postdocs.
+                </div>
+              </div>
+            </div>
+            <div className='WorkAndResearchFirstRowLogo'>
+              <a href='https://www.snowflake.com/en/' target='_blank'>
+                <img
+                  className='WorkAndResearchExperienceLogoSnowflake'
+                  src={SnowflakeLogo}
+                  alt='Snowflake software company logo'
+                />
+              </a>
+              <div className='SnowflakeInformation'>
+                <div className='OrganizationName'>Snowflake</div>
+                <div className='Timeline'>June 2021 - August 2021</div>
+                <div className='PositionTitle'>Apps Team Developer</div>
+                <div className='PositionDescription'>
+                  Worked alongside professional engineers to develop a data
+                  exchange platform which enables providers to publish data that
+                  can then be discovered by consumers. Only high school student
+                  on team. Completed independent front-end tasks.
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div className='Snowflake'>
-          <img
-            className='SnowflakeLogo'
-            src={SnowflakeLogo}
-            alt='Snowflake logo'
-          />
-          <div className='SnowflakeTimeline'>2021</div>
-          <div className='SnowflakePositionTitle'>Apps Team Developer</div>
-        </div>
       </div>
-      <div className='PositionDescriptions'>
-        <div className='StanfordPosition'>
+    </div>
+  );
+}
+
+/*
+<div className='StanfordPosition'>
           Research medical applications of machine learning. Built a platform
           for doctors to use that runs inference and analyzes open surgery
           video. Optimized virtual machine usage to save costs on GPUs. Work
@@ -47,9 +70,6 @@ function WorkAndResearch() {
           platform. Only high school student on team. Completed independent
           front-end tasks.
         </div>
-      </div>
-    </div>
-  );
-}
+*/
 
 export default WorkAndResearch;
