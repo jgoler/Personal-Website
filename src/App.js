@@ -32,9 +32,11 @@ function App() {
   return (
     <div className='App'>
       {menuStatus ? (
-        <div className='SidebarContainer' onClick={menuOpenHandler}>
-          <div className='MenuContainer'>
-            <MdMenu color='white' size='45' />
+        <div>
+          <div className='SidebarContainer' onClick={menuOpenHandler}>
+            <div className='MenuContainer'>
+              <MdMenu color='white' size='45' />
+            </div>
           </div>
         </div>
       ) : (
@@ -96,32 +98,34 @@ function App() {
           </div>
         </div>
       )}
-      <div ref={HomeRef}>
-        <Welcome />
-      </div>
-      <div ref={AboutMeRef}>
-        <AboutMe />
-      </div>
-      <div ref={WorkAndResearchRef}>
-        <WorkAndResearch />
-      </div>
-      <div ref={EducationRef}>
-        <Education />
-      </div>
-      <div ref={ProjectsRef}>
-        <Projects />
-      </div>
-      <div ref={AwardsRef}>
-        <Awards />
-      </div>
-      <div ref={SkillsRef}>
-        <Skills />
-      </div>
-      <div ref={ContactRef}>
-        <Contact />
-      </div>
       <div>
-        <Footer />
+        <div ref={HomeRef}>
+          <Welcome />
+        </div>
+        <div ref={AboutMeRef}>
+          <AboutMe />
+        </div>
+        <div ref={WorkAndResearchRef}>
+          <WorkAndResearch />
+        </div>
+        <div ref={EducationRef}>
+          <Education />
+        </div>
+        <div ref={ProjectsRef}>
+          <Projects />
+        </div>
+        <div ref={AwardsRef}>
+          <Awards />
+        </div>
+        <div ref={SkillsRef}>
+          <Skills />
+        </div>
+        <div ref={ContactRef}>
+          <Contact />
+        </div>
+        <div>
+          <Footer />
+        </div>
       </div>
     </div>
   );

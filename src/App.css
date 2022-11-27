@@ -54,6 +54,7 @@ html {
   left: 87%;
   position: fixed;
   flex-direction: column;
+  z-index: 1;
 }
 
 .DropDown {
@@ -322,10 +323,65 @@ a:visited {
 }
 
 .Projects {
-  height: 700px;
   border-top-left-radius: 8%;
   border-top-right-radius: 8%;
   background-color: #2dc093;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.ProjectsFirstRow {
+  margin-top: 100px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.ProjectImage {
+  width: 95%;
+}
+
+.ProjectPresentationContainer {
+  width: 80%;
+  background-color: black;
+  border-radius: 8%;
+  border: 3px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.ProjectImageContainer {
+  margin-top: 20px;
+}
+
+.AboutContainer {
+  color: white;
+  border: 2px solid white;
+  border-radius: 10%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.ProjectTitle {
+  color: white;
+  font-weight: 800;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.Project {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .FooterContainer {
@@ -419,6 +475,12 @@ a:visited {
     color: white;
     width: 80%;
   }
+}
+
+.ProjectsTitle {
+  font-size: 40px;
+  color: white;
+  margin-top: 20px;
 }
 
 @media only screen and (max-width: 725px) {

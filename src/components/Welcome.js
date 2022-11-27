@@ -1,6 +1,5 @@
 import '../App.css';
 import ProfilePicture from '../assets/ProfilePicture.png';
-import { MdMenu } from 'react-icons/md';
 
 function Welcome() {
   return (
