@@ -57,7 +57,7 @@ html {
 }
 
 .DropDown {
-  background-color: #2dc093;
+  background-color: #2297bf;
   display: flex;
   width: 80px;
   border-radius: 100px;
@@ -87,7 +87,7 @@ html {
   border-radius: 50%;
   align-items: center;
   justify-content: center;
-  background-color: #2dc093;
+  background-color: #2297bf;
 }
 
 .AboutMe {
@@ -147,7 +147,7 @@ html {
 }
 
 .WorkAndResearchLogosContainer {
-  margin-top: 100px;
+  margin-top: 170px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -203,7 +203,7 @@ html {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin-bottom: 100px;
+  margin-bottom: 170px;
 }
 
 .WorkAndResearchExperienceLogoStanford {
@@ -258,13 +258,24 @@ a:visited {
   flex-direction: row;
   align-items: start;
   justify-content: center;
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin-top: 170px;
+  margin-bottom: 170px;
   width: 90%;
 }
 
 .ProjectsContainer {
   background-color: #122a43;
+}
+
+.AwardsContainer {
+  background-color: #2dc093;
+}
+
+.Awards {
+  background-color: white;
+  height: 700px;
+  border-top-left-radius: 8%;
+  border-top-right-radius: 8%;
 }
 
 .Logo {
@@ -314,7 +325,7 @@ a:visited {
   height: 700px;
   border-top-left-radius: 8%;
   border-top-right-radius: 8%;
-  background-color: white;
+  background-color: #2dc093;
 }
 
 .FooterContainer {

@@ -5,15 +5,22 @@ import WorkAndResearch from './components/WorkAndResearch';
 import Education from './components/Education';
 import Projects from './components/Projects';
 import Footer from './components/Footer';
-import { MdMenu } from 'react-icons/md';
-import { AiOutlineClose } from 'react-icons/ai';
+import Awards from './components/Awards';
+import { MdMenu, MdPerson, MdOutlineWork } from 'react-icons/md';
+import { AiOutlineClose, AiFillHome } from 'react-icons/ai';
+import { FaGraduationCap } from 'react-icons/fa';
+import { BsTools } from 'react-icons/bs';
 import { useRef, useState } from 'react';
 
 function App() {
   const menuOpenHandler = () => {
     setMenuStatus(!menuStatus);
   };
-  //const AboutMeRef = useRef();
+  const HomeRef = useRef();
+  const AboutMeRef = useRef();
+  const WorkAndResearchRef = useRef();
+  const EducationRef = useRef();
+  const ProjectsRef = useRef();
   const [menuStatus, setMenuStatus] = useState(false);
   return (
     <div className='App'>
@@ -24,26 +31,64 @@ function App() {
           </div>
         </div>
       ) : (
-        <div className='SidebarContainer' onClick={menuOpenHandler}>
+        <div className='SidebarContainer'>
           <div className='DropDown'>
             <div className='DropDownListHolder'>
-              <div className='X'>
+              <div className='X' onClick={menuOpenHandler}>
                 <AiOutlineClose color='white' size='45' />
               </div>
-              <div className='DropDownItem'>Test1</div>
-              <div className='DropDownItem'>Test2</div>
-              <div className='DropDownItem'>Test3</div>
-              <div className='DropDownItem'>Test4</div>
-              <div className='DropDownItem'>Test5</div>
+              <div
+                className='DropDownItem'
+                onClick={() => HomeRef.current.scrollIntoView()}
+              >
+                <AiFillHome color='white' size='35' />
+              </div>
+              <div
+                className='DropDownItem'
+                onClick={() => AboutMeRef.current.scrollIntoView()}
+              >
+                <MdPerson color='white' size='35' />
+              </div>
+              <div
+                className='DropDownItem'
+                onClick={() => WorkAndResearchRef.current.scrollIntoView()}
+              >
+                <MdOutlineWork color='white' size='35' />
+              </div>
+              <div
+                className='DropDownItem'
+                onClick={() => EducationRef.current.scrollIntoView()}
+              >
+                <FaGraduationCap color='white' size='35' />
+              </div>
+              <div
+                className='DropDownItem'
+                onClick={() => ProjectsRef.current.scrollIntoView()}
+              >
+                <BsTools color='white' size='35' />
+              </div>
             </div>
           </div>
         </div>
       )}
-      <Welcome />
-      <AboutMe />
-      <WorkAndResearch />
-      <Education />
-      <Projects />
+      <div ref={HomeRef}>
+        <Welcome />
+      </div>
+      <div ref={AboutMeRef}>
+        <AboutMe />
+      </div>
+      <div ref={WorkAndResearchRef}>
+        <WorkAndResearch />
+      </div>
+      <div ref={EducationRef}>
+        <Education />
+      </div>
+      <div ref={ProjectsRef}>
+        <Projects />
+      </div>
+      <div>
+        <Awards />
+      </div>
       <div>
         <Footer />
       </div>
