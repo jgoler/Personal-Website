@@ -47,6 +47,47 @@ function Projects() {
             </div>
           </div>
         </div>
+        <div className='ProjectsFirstRow'>
+          <div className='Project'>
+            <div className='ProjectPresentationContainer'>
+              <div className='ProjectImageContainer'>
+                <img
+                  className='ProjectImage'
+                  src={QuadstrMockup}
+                  alt='Quadstr Mockup'
+                />
+              </div>
+              <div className='ProjectTitle'>Quadstr</div>
+              <div className='AboutContainer'>Details</div>
+            </div>
+          </div>
+          <div className='Project'>
+            <div className='ProjectPresentationContainer'>
+              <div className='ProjectImageContainer'>
+                <img
+                  className='ProjectImage'
+                  src={QuadstrMockup}
+                  alt='Quadstr Mockup'
+                />
+              </div>
+              <div className='ProjectTitle'>Quadstr</div>
+              <div className='AboutContainer'>Details</div>
+            </div>
+          </div>
+          <div className='Project'>
+            <div className='ProjectPresentationContainer'>
+              <div className='ProjectImageContainer'>
+                <img
+                  className='ProjectImage'
+                  src={QuadstrMockup}
+                  alt='Quadstr Mockup'
+                />
+              </div>
+              <div className='ProjectTitle'>Quadstr</div>
+              <div className='AboutContainer'>Details</div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
