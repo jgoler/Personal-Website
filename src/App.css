@@ -355,6 +355,16 @@ a:visited {
   height: 250px;
 }
 
+.ModalContainer {
+  width: 60%;
+  background-color: yellow;
+  z-index: 1;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .ProjectPresentationContainer {
   width: 400px;
   background-color: black;

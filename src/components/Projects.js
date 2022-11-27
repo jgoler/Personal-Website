@@ -4,14 +4,23 @@ import BloqImage from '../assets/Bloq_Image.png';
 import StudentPulseImage from '../assets/Student_Pulse_Image.png';
 import ShellImage from '../assets/Shell_Image.png';
 import ProjectEulerImage from '../assets/Project_Euler.png';
+import QuadstrModal from './QuadstrModal';
+import { useState } from 'react';
 
 function Projects() {
+  const [quadstrModal, setOpenQuadstrModal] = useState(false);
+
+  const quadstrClickHandler = () => {
+    setOpenQuadstrModal(!quadstrModal);
+    console.log(quadstrModal);
+  };
   return (
     <div className='ProjectsContainer'>
+      {!quadstrModal ? <QuadstrModal /> : <div>Test</div>}
       <div className='Projects'>
         <div className='ProjectsTitle'>Projects</div>
         <div className='ProjectsFirstRow'>
-          <div className='Project'>
+          <div className='Project' onClick={quadstrClickHandler}>
             <div className='ProjectPresentationContainer'>
               <div className='ProjectImageContainer'>
                 <img
