@@ -2,6 +2,8 @@ import '../App.css';
 import QuadstrMockup from '../assets/quadstr_image.png';
 import BloqImage from '../assets/Bloq_Image.png';
 import StudentPulseImage from '../assets/Student_Pulse_Image.png';
+import ShellImage from '../assets/Shell_Image.png';
+import ProjectEulerImage from '../assets/Project_Euler.png';
 
 function Projects() {
   return (
@@ -41,7 +43,7 @@ function Projects() {
                 <img
                   className='ProjectImage'
                   src={StudentPulseImage}
-                  alt='Quadstr Mockup'
+                  alt='Student Pulse Mockup'
                 />
               </div>
               <div className='ProjectTitle'>Student Pulse</div>
@@ -55,11 +57,11 @@ function Projects() {
               <div className='ProjectImageContainer'>
                 <img
                   className='ProjectImage'
-                  src={QuadstrMockup}
-                  alt='Quadstr Mockup'
+                  src={ShellImage}
+                  alt='Bash Shell Logo'
                 />
               </div>
-              <div className='ProjectTitle'>Quadstr</div>
+              <div className='ProjectTitle'>Custom Linux Shell</div>
               <div className='AboutContainer'>Details</div>
             </div>
           </div>
@@ -68,24 +70,11 @@ function Projects() {
               <div className='ProjectImageContainer'>
                 <img
                   className='ProjectImage'
-                  src={QuadstrMockup}
-                  alt='Quadstr Mockup'
+                  src={ProjectEulerImage}
+                  alt='Project Euler Logo'
                 />
               </div>
-              <div className='ProjectTitle'>Quadstr</div>
-              <div className='AboutContainer'>Details</div>
-            </div>
-          </div>
-          <div className='Project'>
-            <div className='ProjectPresentationContainer'>
-              <div className='ProjectImageContainer'>
-                <img
-                  className='ProjectImage'
-                  src={QuadstrMockup}
-                  alt='Quadstr Mockup'
-                />
-              </div>
-              <div className='ProjectTitle'>Quadstr</div>
+              <div className='ProjectTitle'>Project Euler</div>
               <div className='AboutContainer'>Details</div>
             </div>
           </div>
