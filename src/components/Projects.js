@@ -1,5 +1,7 @@
 import '../App.css';
 import QuadstrMockup from '../assets/quadstr_image.png';
+import BloqImage from '../assets/Bloq_Image.png';
+import StudentPulseImage from '../assets/Student_Pulse_Image.png';
 
 function Projects() {
   return (
@@ -25,11 +27,11 @@ function Projects() {
               <div className='ProjectImageContainer'>
                 <img
                   className='ProjectImage'
-                  src={QuadstrMockup}
-                  alt='Quadstr Mockup'
+                  src={BloqImage}
+                  alt='Bloq Mockup'
                 />
               </div>
-              <div className='ProjectTitle'>Quadstr</div>
+              <div className='ProjectTitle'>Bloq</div>
               <div className='AboutContainer'>Details</div>
             </div>
           </div>
@@ -38,16 +40,16 @@ function Projects() {
               <div className='ProjectImageContainer'>
                 <img
                   className='ProjectImage'
-                  src={QuadstrMockup}
+                  src={StudentPulseImage}
                   alt='Quadstr Mockup'
                 />
               </div>
-              <div className='ProjectTitle'>Quadstr</div>
+              <div className='ProjectTitle'>Student Pulse</div>
               <div className='AboutContainer'>Details</div>
             </div>
           </div>
         </div>
-        <div className='ProjectsFirstRow'>
+        <div className='ProjectsSecondRow'>
           <div className='Project'>
             <div className='ProjectPresentationContainer'>
               <div className='ProjectImageContainer'>
