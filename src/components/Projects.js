@@ -7,16 +7,39 @@ import ProjectEulerImage from '../assets/Project_Euler.png';
 import QuadstrModal from './QuadstrModal';
 import { useState } from 'react';
 
-function Projects() {
+function Projects({ blurryBackground }) {
   const [quadstrModal, setOpenQuadstrModal] = useState(false);
+  const [bloqModal, setOpenBloqModal] = useState(false);
 
   const quadstrClickHandler = () => {
+    let cur = quadstrModal;
     setOpenQuadstrModal(!quadstrModal);
-    console.log(quadstrModal);
+    blurryBackground(!cur);
   };
+
+  const bloqClickHandler = () => {
+    let cur = bloqModal;
+    setOpenBloqModal(!bloqModal);
+    blurryBackground(!cur);
+  };
+
+  if (!quadstrModal) {
+    if (!bloqModal) {
+      blurryBackground(false);
+    }
+  }
   return (
     <div className='ProjectsContainer'>
-      {!quadstrModal ? <QuadstrModal /> : <div>Test</div>}
+      {quadstrModal ? (
+        <QuadstrModal quadstrModal={setOpenQuadstrModal} blurryBackground />
+      ) : (
+        <div></div>
+      )}
+      {bloqModal ? (
+        <QuadstrModal quadstrModal={setOpenQuadstrModal} blurryBackground />
+      ) : (
+        <div></div>
+      )}
       <div className='Projects'>
         <div className='ProjectsTitle'>Projects</div>
         <div className='ProjectsFirstRow'>
@@ -33,7 +56,7 @@ function Projects() {
               <div className='AboutContainer'>Details</div>
             </div>
           </div>
-          <div className='Project'>
+          <div className='Project' onClick={bloqClickHandler}>
             <div className='ProjectPresentationContainer'>
               <div className='ProjectImageContainer'>
                 <img

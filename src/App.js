@@ -29,9 +29,10 @@ function App() {
   const SkillsRef = useRef();
   const ContactRef = useRef();
   const [menuStatus, setMenuStatus] = useState(false);
+  const [blurryBackground, setBlurryBackground] = useState(false);
   return (
     <div className='App'>
-      {menuStatus ? (
+      {!menuStatus ? (
         <div>
           <div className='SidebarContainer' onClick={menuOpenHandler}>
             <div className='MenuContainer'>
@@ -112,8 +113,13 @@ function App() {
           <Education />
         </div>
         <div ref={ProjectsRef}>
-          <Projects />
+          <Projects blurryBackground={setBlurryBackground} />
         </div>
+        {blurryBackground ? (
+          <div className='BackgroundBlurry'></div>
+        ) : (
+          <div></div>
+        )}
         <div ref={AwardsRef}>
           <Awards />
         </div>

@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+body {
+  width: 100%;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -54,7 +58,7 @@ html {
   left: 87%;
   position: fixed;
   flex-direction: column;
-  z-index: 1;
+  z-index: 3;
 }
 
 .DropDown {
@@ -66,6 +70,7 @@ html {
   justify-content: center;
   flex-direction: column;
   color: white;
+  z-index: 2;
 }
 
 .X {
@@ -82,6 +87,7 @@ html {
 }
 
 .MenuContainer {
+  z-index: 3;
   display: flex;
   width: 80px;
   height: 80px;
@@ -355,14 +361,90 @@ a:visited {
   height: 250px;
 }
 
+.ToolsStyle {
+  font-style: italic;
+}
+
+.Tools {
+  margin-bottom: 10px;
+}
+
+.ModalTitle {
+  margin-top: 20px;
+  color: #122a43;
+  font-weight: 800;
+  font-size: 30px;
+  margin-bottom: 15px;
+  position: fixed;
+  top: 0;
+}
+
+.ModalDescription {
+  width: 80%;
+}
+
+.OtherInformation {
+  display: flex;
+  flex-direction: row;
+  width: 500px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.ModalCloseButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #122a43;
+  padding: 5px;
+  border-radius: 8%;
+  margin-bottom: 15px;
+}
+
+.InformationPiece {
+  border: 2px solid #122a43;
+  padding: 5px;
+  border-radius: 8%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .ModalContainer {
+  color: #122a43;
   width: 60%;
-  background-color: yellow;
-  z-index: 1;
+  background-color: #2dc093;
+  z-index: 4;
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 10px;
+  border-radius: 8%;
+  border: 2px solid #122a43;
+}
+
+.HorizontalRow {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 99.8%;
+  border: 2px solid #122a43;
+}
+
+.BackgroundBlurry {
+  z-index: 1;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: gray;
+  opacity: 0.8;
 }
 
 .ProjectPresentationContainer {
@@ -422,6 +504,96 @@ a:visited {
 .GithubForWebsite {
   font-weight: normal;
   margin-bottom: 8px;
+}
+
+.SecondModalContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  max-height: 100%;
+  top: 0;
+  height: 700px;
+}
+
+.BottomModal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.ModalBody {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+@media only screen and (max-width: 890px) {
+  .ModalTitle {
+    position: fixed;
+    top: 0;
+  }
+
+  .ModalBody {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+
+  .ModalContainer {
+    color: #122a43;
+    width: 95%;
+    height: 650px;
+    background-color: #2dc093;
+    z-index: 4;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 10px;
+    border-radius: 8%;
+    border: 2px solid #122a43;
+  }
+
+  .OtherInformation {
+    display: flex;
+    flex-direction: row;
+    width: 360px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .InformationPiece {
+    border: 2px solid #122a43;
+    padding: 1px;
+    border-radius: 8%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 @media only screen and (max-width: 1240px) {
