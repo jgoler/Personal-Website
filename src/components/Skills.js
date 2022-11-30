@@ -5,6 +5,7 @@ function Skills() {
     <div className='SkillsContainer'>
       <div className='Skills'>
         <div className='SkillsTitle'>Skills</div>
+        <div className='SkillsSubTitle'>Programming Languages and Tools</div>
       </div>
     </div>
   );
