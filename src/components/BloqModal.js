@@ -20,7 +20,7 @@ function BloqModal({ bloqModal, blurryBackground }) {
             <div className='HorizontalRow'></div>
             <div className='Tools'>
               <span className='ToolsStyle'>Tools: </span>
-              JavaScript, React Native, Express, NodeJS, MongoDB
+              JavaScript, React Native, Express, NodeJS, MongoDB, Heroku
             </div>
             <div className='OtherInformation'>
               <div className='EmptyInformationPiece'></div>

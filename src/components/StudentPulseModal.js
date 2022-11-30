@@ -26,7 +26,7 @@ function StudentPulseModal({ studentPulseModal, blurryBackground }) {
             <div className='HorizontalRow'></div>
             <div className='Tools'>
               <span className='ToolsStyle'>Tools: </span>
-              JavaScript, React Native, Express, NodeJS, MongoDB
+              JavaScript, React Native, Express, NodeJS, MongoDB, Heroku
             </div>
             <div className='OtherInformation'></div>
             <div className='ModalCloseButton' onClick={closeModalHandler}>

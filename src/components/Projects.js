@@ -8,6 +8,7 @@ import QuadstrModal from './QuadstrModal';
 import BloqModal from './BloqModal';
 import StudentPulseModal from './StudentPulseModal';
 import ShellModal from './ShellModal';
+import ProjectEulerModal from './ProjectEulerModal';
 import { useState } from 'react';
 
 function Projects({ blurryBackground, closedModal }) {
@@ -15,6 +16,7 @@ function Projects({ blurryBackground, closedModal }) {
   const [bloqModal, setOpenBloqModal] = useState(false);
   const [studentPulseModal, setOpenStudentPulseModal] = useState(false);
   const [shellModal, setOpenShellModal] = useState(false);
+  const [projectEulerModal, setOpenProjectEulerModal] = useState(false);
 
   const quadstrClickHandler = () => {
     let cur = quadstrModal;
@@ -40,19 +42,28 @@ function Projects({ blurryBackground, closedModal }) {
     blurryBackground(!cur);
   };
 
+  const projectEulerClickHandler = () => {
+    let cur = projectEulerModal;
+    setOpenProjectEulerModal(!projectEulerModal);
+    blurryBackground(!cur);
+  };
+
   if (closedModal) {
     console.log('In closed modal if statement');
     setOpenQuadstrModal(false);
     setOpenBloqModal(false);
     setOpenStudentPulseModal(false);
     setOpenShellModal(false);
+    setOpenProjectEulerModal(false);
   }
 
   if (!quadstrModal) {
     if (!bloqModal) {
       if (!studentPulseModal) {
         if (!shellModal) {
-          blurryBackground(false);
+          if (!projectEulerModal) {
+            blurryBackground(false);
+          }
         }
       }
     }
@@ -76,6 +87,14 @@ function Projects({ blurryBackground, closedModal }) {
       )}
       {shellModal ? (
         <ShellModal shellModal={setOpenShellModal} blurryBackground />
+      ) : (
+        <div></div>
+      )}
+      {projectEulerModal ? (
+        <ProjectEulerModal
+          projectEulerModal={setOpenProjectEulerModal}
+          blurryBackground
+        />
       ) : (
         <div></div>
       )}
@@ -136,7 +155,7 @@ function Projects({ blurryBackground, closedModal }) {
               <div className='AboutContainer'>Details</div>
             </div>
           </div>
-          <div className='Project'>
+          <div className='Project' onClick={projectEulerClickHandler}>
             <div className='ProjectPresentationContainer'>
               <div className='ProjectImageContainer'>
                 <img
