@@ -17,6 +17,10 @@ import { FiMail } from 'react-icons/fi';
 import { useRef, useState } from 'react';
 
 function App() {
+  const backgroundClickHandler = () => {
+    setBlurryBackground(false);
+    setClosedModal(true);
+  };
   const menuOpenHandler = () => {
     setMenuStatus(!menuStatus);
   };
@@ -30,6 +34,7 @@ function App() {
   const ContactRef = useRef();
   const [menuStatus, setMenuStatus] = useState(false);
   const [blurryBackground, setBlurryBackground] = useState(false);
+  const [closedModal, setClosedModal] = useState(false);
   return (
     <div className='App'>
       {!menuStatus ? (
@@ -113,7 +118,10 @@ function App() {
           <Education />
         </div>
         <div ref={ProjectsRef}>
-          <Projects blurryBackground={setBlurryBackground} />
+          <Projects
+            blurryBackground={setBlurryBackground}
+            closed={closedModal}
+          />
         </div>
         {blurryBackground ? (
           <div className='BackgroundBlurry'></div>

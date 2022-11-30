@@ -5,11 +5,16 @@ import StudentPulseImage from '../assets/Student_Pulse_Image.png';
 import ShellImage from '../assets/Shell_Image.png';
 import ProjectEulerImage from '../assets/Project_Euler.png';
 import QuadstrModal from './QuadstrModal';
+import BloqModal from './BloqModal';
+import StudentPulseModal from './StudentPulseModal';
+import ShellModal from './ShellModal';
 import { useState } from 'react';
 
-function Projects({ blurryBackground }) {
+function Projects({ blurryBackground, closedModal }) {
   const [quadstrModal, setOpenQuadstrModal] = useState(false);
   const [bloqModal, setOpenBloqModal] = useState(false);
+  const [studentPulseModal, setOpenStudentPulseModal] = useState(false);
+  const [shellModal, setOpenShellModal] = useState(false);
 
   const quadstrClickHandler = () => {
     let cur = quadstrModal;
@@ -23,9 +28,33 @@ function Projects({ blurryBackground }) {
     blurryBackground(!cur);
   };
 
+  const studentPulseClickHandler = () => {
+    let cur = studentPulseModal;
+    setOpenStudentPulseModal(!studentPulseModal);
+    blurryBackground(!cur);
+  };
+
+  const shellClickHandler = () => {
+    let cur = shellModal;
+    setOpenShellModal(!shellModal);
+    blurryBackground(!cur);
+  };
+
+  if (closedModal) {
+    console.log('In closed modal if statement');
+    setOpenQuadstrModal(false);
+    setOpenBloqModal(false);
+    setOpenStudentPulseModal(false);
+    setOpenShellModal(false);
+  }
+
   if (!quadstrModal) {
     if (!bloqModal) {
-      blurryBackground(false);
+      if (!studentPulseModal) {
+        if (!shellModal) {
+          blurryBackground(false);
+        }
+      }
     }
   }
   return (
@@ -36,7 +65,17 @@ function Projects({ blurryBackground }) {
         <div></div>
       )}
       {bloqModal ? (
-        <QuadstrModal quadstrModal={setOpenQuadstrModal} blurryBackground />
+        <BloqModal bloqModal={setOpenBloqModal} blurryBackground />
+      ) : (
+        <div></div>
+      )}
+      {studentPulseModal ? (
+        <StudentPulseModal studentPulseModal={setOpenStudentPulseModal} />
+      ) : (
+        <div></div>
+      )}
+      {shellModal ? (
+        <ShellModal shellModal={setOpenShellModal} blurryBackground />
       ) : (
         <div></div>
       )}
@@ -69,7 +108,7 @@ function Projects({ blurryBackground }) {
               <div className='AboutContainer'>Details</div>
             </div>
           </div>
-          <div className='Project'>
+          <div className='Project' onClick={studentPulseClickHandler}>
             <div className='ProjectPresentationContainer'>
               <div className='ProjectImageContainer'>
                 <img
@@ -84,7 +123,7 @@ function Projects({ blurryBackground }) {
           </div>
         </div>
         <div className='ProjectsSecondRow'>
-          <div className='Project'>
+          <div className='Project' onClick={shellClickHandler}>
             <div className='ProjectPresentationContainer'>
               <div className='ProjectImageContainer'>
                 <img
