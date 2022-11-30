@@ -40,9 +40,18 @@ function QuadstrModal({ quadstrModal, blurryBackground }) {
               HTML, CSS, JavaScript, ReactJS, ExpressJS, NodeJS, MongoDB, Heroku
             </div>
             <div className='OtherInformation'>
-              <div className='InformationPiece'>Landing Page</div>
-              <div className='InformationPiece'>Medium Article</div>
-              <div className='InformationPiece'>Github Repository</div>
+              <a href='http://quadstr.com/' target='_blank'>
+                <div className='InformationPiece'>Landing Page</div>
+              </a>
+              <a
+                href='https://jack-goler.medium.com/lessons-from-building-quadstr-b13267e06334'
+                target='_blank'
+              >
+                <div className='InformationPiece'>Medium Article</div>
+              </a>
+              <a href='https://github.com/jgoler/quadstr-2.0' target='_blank'>
+                <div className='InformationPiece'>Github Repository</div>
+              </a>
             </div>
             <div className='ModalCloseButton' onClick={closeModalHandler}>
               Close

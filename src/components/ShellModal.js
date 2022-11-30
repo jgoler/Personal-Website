@@ -24,7 +24,12 @@ function ShellModal({ shellModal, blurryBackground }) {
             </div>
             <div className='OtherInformation'>
               <div className='EmptyInformationPiece'></div>
-              <div className='InformationPiece'>Github Repository</div>
+              <a
+                href='https://github.com/jgoler/Custom-Linux-Shell'
+                target='_blank'
+              >
+                <div className='InformationPiece'>Github Repository</div>
+              </a>
               <div className='EmptyInformationPiece'></div>
             </div>
             <div className='ModalCloseButton' onClick={closeModalHandler}>

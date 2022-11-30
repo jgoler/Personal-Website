@@ -278,11 +278,21 @@ a:visited {
   background-color: #2dc093;
 }
 
+.Award {
+  flex: 1;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
 .Awards {
   background-color: white;
-  height: 700px;
   border-top-left-radius: 8%;
   border-top-right-radius: 8%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #122a43;
 }
 
 .Logo {
@@ -518,6 +528,11 @@ a:visited {
   height: 700px;
 }
 
+.OtherInformation a {
+  background-color: #122a43;
+  color: #2dc093;
+}
+
 .BottomModal {
   display: flex;
   flex-direction: column;
@@ -534,10 +549,59 @@ a:visited {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   overflow-y: scroll;
   overflow-x: hidden;
   width: 100%;
+}
+
+.ProjectsTitle {
+  font-size: 40px;
+  color: #122a43;
+  margin-top: 20px;
+}
+
+.AwardsTitle {
+  font-size: 40px;
+  color: #122a43;
+  margin-top: 20px;
+}
+
+.AwardTitle {
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 800;
+  color: #122a43;
+}
+
+.AwardsFirstRow {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 90%;
+}
+
+@media only screen and (max-width: 900px) {
+  .AwardsFirstRow {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 90%;
+  }
+
+  .AwardTitle {
+    margin-bottom: 0px;
+  }
+
+  .AwardDescription {
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
 }
 
 @media only screen and (max-width: 890px) {

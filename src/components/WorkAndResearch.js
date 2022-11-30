@@ -19,7 +19,9 @@ function WorkAndResearch() {
               </a>
               <div className='MARVLInformation'>
                 <div className='OrganizationName'>
-                  Stanford University Medical AI and Computer Vision Lab
+                  <a href='https://marvl.stanford.edu/' target='_blank'>
+                    Stanford University Medical AI and Computer Vision Lab
+                  </a>
                 </div>
                 <div className='Timeline'>June 2022 - Present</div>
                 <div className='PositionTitle'>Research Intern</div>
@@ -40,7 +42,9 @@ function WorkAndResearch() {
                 />
               </a>
               <div className='SnowflakeInformation'>
-                <div className='OrganizationName'>Snowflake</div>
+                <a href='https://www.snowflake.com/en/' target='_blank'>
+                  <div className='OrganizationName'>Snowflake</div>
+                </a>
                 <div className='Timeline'>June 2021 - August 2021</div>
                 <div className='PositionTitle'>Apps Team Developer</div>
                 <div className='PositionDescription'>
