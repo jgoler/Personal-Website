@@ -476,6 +476,7 @@ a:visited {
 
 .AreasOfExpertise {
   margin-top: 20px;
+  margin-bottom: 50px;
 }
 
 .CheckContainer {
@@ -671,7 +672,65 @@ ul li {
   background-color: #122a43;
 }
 
-@media only screen and (max-width: 900px) {
+.Contact {
+  border-top-left-radius: 8%;
+  border-top-right-radius: 8%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #122a43;
+  background-color: #2dc093;
+}
+
+.ContactTitle {
+  font-size: 40px;
+  color: #122a43;
+  margin-top: 20px;
+}
+
+.Contacts {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  width: 75%;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.SingleContact a {
+  display: flex;
+  flex-direction: row;
+  color: #122a43;
+  align-items: center;
+  justify-content: center;
+}
+
+.SingleContact {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.DivForSpace {
+  margin: 10px;
+}
+
+@media only screen and (max-width: 950px) {
+  .Contacts {
+    flex-direction: column;
+    width: 220px;
+  }
+
+  .SingleContact {
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen and (max-width: 1075px) {
   .AwardsFirstRow {
     margin-top: 50px;
     margin-bottom: 50px;
