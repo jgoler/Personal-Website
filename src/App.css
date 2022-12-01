@@ -469,6 +469,29 @@ a:visited {
   flex-direction: column;
 }
 
+.AreasOfExpertiseTitle {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.AreasOfExpertise {
+  margin-top: 20px;
+}
+
+.CheckContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+.AreaOfExpertise {
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
 .ProjectImageContainer {
   margin-top: 20px;
 }
@@ -529,6 +552,14 @@ a:visited {
   height: 700px;
 }
 
+.IconStyle {
+  margin: 10px;
+}
+
+.IconStyle:hover {
+  color: #3295e1;
+}
+
 .OtherInformation a {
   background-color: #122a43;
   color: #2dc093;
@@ -584,6 +615,18 @@ a:visited {
   width: 90%;
 }
 
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+ul li {
+  display: list-item;
+  background: black;
+  padding: 5px 10px;
+  color: white;
+  margin: 0 3px;
+}
 .Award a {
   color: #2678b7;
 }
@@ -603,10 +646,29 @@ a:visited {
   color: white;
 }
 
+.SkillsIcons {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 80%;
+  align-items: center;
+  justify-content: center;
+}
+
 .SkillsTitle {
   font-size: 40px;
   color: white;
   margin-top: 20px;
+}
+
+.SkillsSubTitle {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.ContactContainer {
+  background-color: #122a43;
 }
 
 @media only screen and (max-width: 900px) {
