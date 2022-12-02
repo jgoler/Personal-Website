@@ -608,12 +608,24 @@ a:visited {
 
 .AwardsFirstRow {
   margin-top: 50px;
+  margin-bottom: 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.AwardsSecondRow {
+  margin-top: 50px;
   margin-bottom: 50px;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
+  flex-wrap: wrap;
   justify-content: space-between;
-  width: 90%;
+  width: 22.5%;
 }
 
 ul {
@@ -733,10 +745,19 @@ ul li {
 @media only screen and (max-width: 1075px) {
   .AwardsFirstRow {
     margin-top: 50px;
-    margin-bottom: 50px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+  }
+
+  .AwardsSecondRow {
+    margin-bottom: 50px;
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: space-between;
     width: 90%;
   }

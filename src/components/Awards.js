@@ -69,6 +69,25 @@ function Awards() {
             </div>
           </div>
         </div>
+        <div className='AwardsSecondRow'>
+          <div className='Award'>
+            <div className='AwardTitle'>
+              <a
+                href='https://www.nationalmerit.org/s/1758/interior.aspx?sid=1758&gid=2&pgid=424#:~:text=Semifinalists%20are%20the%20highest%20scoring,Semifinalists%20through%20their%20high%20schools.'
+                target='_blank'
+              >
+                2023 American Invitational Mathematics Examination Qualifier
+              </a>
+            </div>
+            <br></br>
+            <div className='AwardDescription'>
+              American Math Competition test takers who score within the top 5%
+              qualify for the AIME. Scored 108 on the 2022 AMC 12B, one of the
+              top 500 scores in the country and within the top 3% of test
+              takers.
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
