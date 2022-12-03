@@ -6,6 +6,7 @@ import { SiMongodb, SiExpress, SiTensorflow } from 'react-icons/si';
 import { AiFillHtml5 } from 'react-icons/ai';
 import { IoLogoCss3 } from 'react-icons/io';
 import { BsCheckLg } from 'react-icons/bs';
+import { GrHeroku } from 'react-icons/gr';
 
 function Skills() {
   return (
@@ -52,6 +53,9 @@ function Skills() {
           </div>
           <div className='IconStyle'>
             <SiGooglecloud size='60' />
+          </div>
+          <div className='IconStyle'>
+            <GrHeroku size='60' />
           </div>
         </div>
         <div className='AreasOfExpertise'>

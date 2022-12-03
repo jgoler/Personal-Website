@@ -73,7 +73,7 @@ function Awards() {
           <div className='Award'>
             <div className='AwardTitle'>
               <a
-                href='https://www.nationalmerit.org/s/1758/interior.aspx?sid=1758&gid=2&pgid=424#:~:text=Semifinalists%20are%20the%20highest%20scoring,Semifinalists%20through%20their%20high%20schools.'
+                href='https://www.maa.org/math-competitions/american-invitational-mathematics-examination-aime'
                 target='_blank'
               >
                 2023 American Invitational Mathematics Examination Qualifier
